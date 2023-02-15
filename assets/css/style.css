@@ -6,31 +6,48 @@
 
   font-weight: 500;
 }
-
-div ul li:hover {
+/* NAV section */
+nav div ul li:hover {
   border-bottom: 4px solid blue;
 }
-
+/* HERO SECTION  */
 .hero-heading {
   font: "Inter", sans-serif;
   font-weight: 700;
 }
-
 .hero-description {
-  font-weight: 100;
+  font-weight: 200;
 }
-
+.hero .hero-women {
+  position: relative;
+}
+.hero-women .facebook {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+}
+.hero-women .instagram {
+  position: absolute;
+  top: 90px;
+  left: 200px;
+}
+.hero-women .twitter {
+  position: absolute;
+  top: 200px;
+  left: 32px;
+}
 .green-youtube-button {
   border: none;
   background: transparent;
 }
-
 .hero-women {
   background-image: url("../images/hero-women-background.png");
+  background-position: 40%;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+/* SERVICE CARDS section */
 .social-media-management h2 {
   padding-top: 1rem;
   font-weight: 200;
@@ -48,22 +65,24 @@ div ul li:hover {
   border-radius: 5px;
   padding: 2rem;
 }
+
+/* OUR PROCEDURE  */
 .procedure-container {
   background-image: url("../images/Ellipse 28.svg");
   background-repeat: no-repeat;
   background-position-y: bottom;
+  background-position-x: right;
   background-size: contain;
 }
 .procedure-container h1 {
   font-weight: 600;
   font-size: 2.2rem;
 }
-.procedure-container p {
+.optimizing-your-website .row p {
   margin-top: 2rem;
   font-weight: 200;
 }
 .procedure-container {
-  /* box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07); */
   border-radius: 5px;
 }
 .procedure-1 {
@@ -88,10 +107,13 @@ div ul li:hover {
 }
 .procedure-container .procedure:hover {
   border-bottom: 5px solid blue;
+  background-color: white;
+
   box-shadow: 0px 10px 14px 2px rgba(14, 17, 60, 0.09);
   transition: 400ms;
 }
 
+/* PERCEFT SOLUTION  */
 .perfect-solution .left-block p {
   font-weight: 200;
   padding: 2rem;
@@ -109,6 +131,7 @@ div ul li:hover {
   justify-content: center;
 }
 
+/* WHAT CAN YOU EXPECT HERE  */
 .what-can-you-expect-container .col-10 {
   padding: 2rem;
 }
@@ -122,6 +145,7 @@ div ul li:hover {
   box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
 }
 
+/* WHY SHOULD YOU CHOOSE US  */
 .why-you-should-choose-us-container {
   background-color: #fafafa;
 }
@@ -134,23 +158,23 @@ div ul li:hover {
 }
 .why-you-should-choose-us-container-cards .col-10:hover {
   transition: 500ms;
-  box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.2);
+  box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
 }
 
+/* YOU MAY ASK  */
 .you-make-ask-container p {
   font-weight: 200;
 }
-
 .you-make-ask-cards {
   padding: 1rem 1rem;
 }
-
 .you-make-ask-cards:hover {
   transition: 400ms;
   box-shadow: 5px 25px 37px rgba(2, 22, 5, 0.06);
   border-radius: 4px;
 }
 
+/* OUR MILESTONES */
 .milesstone-container .row div {
   text-align: center;
 }
@@ -166,7 +190,13 @@ div ul li:hover {
   font-size: 3rem;
   color: #666565;
 }
+.milesstone-container-flex p,
+.milesstone-container-flex h1,
+.milesstone-container-flex h2 {
+  text-align: center;
+}
 
+/* CHECK WEBSITE SPEED  */
 .check-your-website-speed-container p {
   font-weight: 200;
 }
@@ -178,16 +208,17 @@ div ul li:hover {
   border: none;
   background-color: #f2f2f2;
 }
-
 ::placeholder {
   padding-left: 1rem;
 }
 
+/* OUR PLANS  */
 .our-plans-container {
   background-color: #fafafa;
 }
 .our-plans-container p {
   font-weight: 200;
+  text-align: center;
 }
 .our-plans-container-plans-cards {
   background-color: white;
@@ -213,29 +244,55 @@ div ul li:hover {
   font-size: 12px;
 }
 
+/* OUR TEAM MEMBERS  */
 .our-expert-team-members p {
   font-weight: 200;
   /* text-align: center; */
 }
-
 .our-expert-team-members .member-profiles {
   padding: 3rem 2rem;
-  margin: 0 5rem;
+  margin: 0 2rem;
 }
-
 .our-expert-team-members .member-profiles:hover {
   transition: 400ms;
   box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.2);
 }
-
+.member-profiles h4:hover,
+.member-profiles p:hover {
+  color: blue;
+}
 .our-expert-team-members .member-profiles button:hover {
   color: blue;
 }
 
+/* CLIENT REVIEWS  */
 .client-review-container p {
   font-weight: 200;
 }
 .client-review-container-cards .flex-column {
   background-image: url("../images/“.svg");
   background-repeat: no-repeat;
+}
+
+/* SUBSCRIBE  */
+.subscribe {
+  background-color: #fafafa;
+}
+
+/* FOOTER  */
+footer .row span {
+  font-size: 4rem;
+  color: red;
+}
+footer a {
+  color: black;
+  font-weight: 400;
+}
+footer p {
+  font-weight: 200;
+}
+footer .justify-content-between {
+  padding: 0 2rem;
+  margin-top: 1rem;
+  font-size: 10px;
 }
